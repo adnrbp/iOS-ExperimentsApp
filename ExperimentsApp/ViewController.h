@@ -13,6 +13,7 @@
 @property (strong, nonatomic) IBOutlet UILabel *titleLabel;
 @property (strong, nonatomic) IBOutlet UITextField *textField;
 @property (strong, nonatomic) IBOutlet UILabel *bigNumber;
+@property (strong, nonatomic) IBOutlet UITextField *inputNumber;
 
 
 - (IBAction)btnPressMe:(UIButton *)sender;

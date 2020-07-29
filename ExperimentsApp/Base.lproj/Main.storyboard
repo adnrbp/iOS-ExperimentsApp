@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="jpa-ox-coM">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -35,7 +35,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lKP-Ub-uKC">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="33"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="126" y="113" width="108" height="71"/>
@@ -44,7 +44,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Just a Text" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mlv-kH-v13">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="44" y="385" width="183" height="21"/>
@@ -63,6 +63,14 @@
                                     <action selector="btnPressMe:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gkv-Sn-9I7"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Zf-zj-fO0">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="71" y="428" width="97" height="30"/>
+                                </variation>
+                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VWV-F1-Jba">
                                 <rect key="frame" x="20" y="20" width="84" height="30"/>
                                 <color key="backgroundColor" red="0.039765249767100358" green="0.69956642670157065" blue="0.10389058283226371" alpha="1" colorSpace="calibratedRGB"/>
@@ -78,12 +86,12 @@
                                     <action selector="AddValues:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ehc-6x-kX6"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Zf-zj-fO0">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZZz-bc-Oiw">
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="71" y="428" width="97" height="30"/>
+                                    <rect key="frame" x="137" y="192" width="97" height="30"/>
                                 </variation>
                             </textField>
                         </subviews>
@@ -94,8 +102,9 @@
                                 <exclude reference="lKP-Ub-uKC"/>
                                 <exclude reference="mlv-kH-v13"/>
                                 <exclude reference="5Mx-fC-w6m"/>
-                                <exclude reference="VWV-F1-Jba"/>
                                 <exclude reference="0Zf-zj-fO0"/>
+                                <exclude reference="VWV-F1-Jba"/>
+                                <exclude reference="ZZz-bc-Oiw"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -104,20 +113,86 @@
                                 <include reference="lKP-Ub-uKC"/>
                                 <include reference="mlv-kH-v13"/>
                                 <include reference="5Mx-fC-w6m"/>
-                                <include reference="VWV-F1-Jba"/>
                                 <include reference="0Zf-zj-fO0"/>
+                                <include reference="VWV-F1-Jba"/>
+                                <include reference="ZZz-bc-Oiw"/>
                             </mask>
                         </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="PRy-Xq-u5r">
+                        <barButtonItem key="rightBarButtonItem" title="Next Page" id="cQd-wN-EvP">
+                            <connections>
+                                <segue destination="OZW-ec-MI9" kind="show" id="siq-K4-g2z"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="bigNumber" destination="lKP-Ub-uKC" id="yYm-Yd-MaX"/>
+                        <outlet property="inputNumber" destination="ZZz-bc-Oiw" id="c3d-EJ-a8Z"/>
                         <outlet property="textField" destination="0Zf-zj-fO0" id="Zba-NX-OsE"/>
                         <outlet property="titleLabel" destination="mlv-kH-v13" id="xYU-SY-gsk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="378" y="297"/>
+            <point key="canvasLocation" x="981" y="329"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="F7z-RO-iQP">
+            <objects>
+                <viewController id="OZW-ec-MI9" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="915-Fh-Sj8"/>
+                        <viewControllerLayoutGuide type="bottom" id="730-lo-XZG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1nk-BT-KwL">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="natureForest.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="RSl-9P-gDd">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="28" width="400" height="558"/>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="RSl-9P-gDd"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="RSl-9P-gDd"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P8r-WN-GgP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1743" y="343"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="JZm-y0-WLM">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jpa-ox-coM" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="H0e-pI-vfm">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="DXQ-sL-fqb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dhP-x2-fHE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="63" y="329"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="natureForest.jpeg" width="1000" height="1500"/>
+    </resources>
 </document>

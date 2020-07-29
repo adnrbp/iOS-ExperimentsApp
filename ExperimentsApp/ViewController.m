@@ -21,6 +21,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.total = 0;
+    int x;
+    x = 5;
+    
+    float heightOfEverstBaseCamp = 16900.3;
     
     // Do any additional setup after loading the view, typically from a nib.
 }
@@ -31,17 +35,20 @@
 }
 
 - (IBAction)btnPressMe:(UIButton *)sender {
-    self.titleLabel.text = @"Hello class";
+    self.titleLabel.text = self.textField.text; //@"Hello class";
+    [self.textField resignFirstResponder];
     
 }
 
 - (IBAction)AddValues:(UIButton *)sender {
-    self.total = self.total + 1;
+    //NSInteger toSum = (int)self.inputNumber.text;
+    self.total = self.total + 1; //(int)toSum;
     self.bigNumber.text = [NSString stringWithFormat:@"%i", self.total];
 }
 
 - (IBAction)substractValues:(UIButton *)sender {
-    self.total = self.total - 1;
+    //NSInteger toSubs = (int)self.inputNumber.text;
+    self.total = self.total - 1;//(int)toSubs;
     self.bigNumber.text = [NSString stringWithFormat:@"%i", self.total];
 }
 @end
